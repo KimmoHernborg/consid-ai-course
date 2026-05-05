@@ -13,18 +13,24 @@
 - Useful for people who hoard tabs and want to clean up their browser but still keep the links
 - Tech stack ideas:
   - Bun for runtime and package manager (small footprint, fast startup)
-  - React for frontend (Vite or Tanstack Start, Tailwind, Shadcn UI)
-  - Hono for backend
+  - React for frontend (Tanstack Start, Tailwind, Shadcn UI)
   - Sqlite for database (use Drizzle as ORM)
+  - Something to handle background jobs for processing the links and generating tags (e.g. BullMQ, Agenda, or a custom solution using Bun's timers)
   - OpenRouter API for AI processing
   - PocketID for authentication
   - Docker for containerization and deployment
 
-## An AI-powered image generation studio
+**Prompt for generating an app icon for the bookmarking service:**
 
-- Name ideas: **imager**, **artify**, **pixel.ai**
+```
+Generate an app icon for an application that helps you organize bookmarks and links with the assistance of AI. The name of the application is 'bookmarkly'. Just create a graphical icon with no text. Use moss green as the main color and earth tones and beige tones for contrast colors. Don't add any rounded corners or masking, instead fill the whole space to the edges, but account for some space (approx 5%) will not be visible when masking will be applied by the system.
+```
+
+## An AI-powered image/icon generation studio
+
+- Name ideas: **imager**, **artify**, **icongen**
 - A web app where users can generate images using different AI models
-- Support for multiple AI models (e.g. Stable Diffusion, DALL-E, Midjourney)
+- Support for multiple AI models (e.g. OpenAI GPT-5.4 Image 2, Stable Diffusion, DALL-E, Midjourney)
 - Allow users to input prompts and generate images based on them
 - Allow user to upload images as input for the AI models to modify or use as inspiration
 - Implement a gallery where users can view and manage their generated images
@@ -32,8 +38,7 @@
 - Implement user accounts and authentication using PocketID
 - Tech stack ideas:
   - Bun for runtime and package manager
-  - React for frontend (Vite or Tanstack Start, Tailwind, Shadcn UI)
-  - Hono for backend
+  - React for frontend (Tanstack Start, Tailwind, Shadcn UI)
   - Sqlite for database (use Drizzle as ORM)
   - OpenRouter API for AI processing
   - PocketID for authentication
