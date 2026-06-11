@@ -1,5 +1,11 @@
 # Ideas for a project to implement during the course
 
+I have an idea for a project, I have put together the following spec:
+
+**spec**
+
+Review the idea and look for places for improvement.
+
 ## Bookmarking service using AI to tag the links
 
 - Name ideas: **bookm**, **linky**, **hoardy**
